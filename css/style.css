@@ -38,6 +38,75 @@ footer {
 }
 
 /* Grid */
+/* services-container will be a flexbox container and align our service cards horizontally */
+/* Change layout and sizing without adjusting HTML - Mobile responsiveness. Thanks Josh! */
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* top right bottom and side of an element */
+    margin: 20px 0 20px 0; 
+}
+
+/* service is going to be our grid container */
+/* Define the rows and columns */
+.service {
+    background-color: ghostwhite;
+    display: grid;
+    /* We define for as many rows as we need */
+    /* I have four elements so I will have 4 rows */
+    /* Refers to height of the row */
+    grid-template-rows: 300px 100px 100px 25px;
+    grid-template-columns: 50% 50%;
+    width: 650px;
+    padding: 10px 0 10px 0;
+    border-radius: 7px;
+}
+
+.service-image {
+    display: flex;
+    justify-content: center;
+    /* Our image should be placed in the first row */
+    grid-row: 1;
+    /* What column our image should be placed and how many columns it spans (takes up) */
+    grid-column: 1 / span 2;
+}
+
+.service-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2;
+    grid-column: 1 / span 1;
+}
+
+.service-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2;
+    grid-column: 2 / span 1;
+}
+
+.service-desc {
+    text-align: center;
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+
+.learn-more {
+    display: flex;
+    justify-content: center;
+    grid-row: 4;
+    grid-column: 1 / span 1;
+}
+
+.get-estimate {
+    display: flex;
+    justify-content: center;
+    grid-row: 4;
+    grid-column: 2 / span 1;
+}
 
 .main-form {
     margin-bottom: 30px;;

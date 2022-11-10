@@ -40,7 +40,7 @@ footer {
 .services-container {
     display: flex;
     justify-content: space-around;
-    width: 75%;
+    width: 100%;
     margin: 20px 0 20px 0;
 }
 
@@ -93,6 +93,10 @@ footer {
 .get-estimate {
     display: flex;
     justify-content: center;
+}
+
+.main-form {
+    margin-bottom: 30px;;
 }
 
 .review-container {
